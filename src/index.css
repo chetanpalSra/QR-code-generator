@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Left Section Styling */
+.left-section {
+   flex: 1;
+   /* background-color: #f9f9f9; */
+   /* min-width: 55%; */
+   background-color: #dedfe1;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section Styling */
+.right-section {
+   flex: 1;
+   /* min-height: 50%; */
+   /* background-color: #f8f9fa; */
+   /* min-width: 40%; */
+   background-color: #dedfe1;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.underline-animation {
+   position: relative;
+   display: inline-flex;
+   align-items: center;
+   font-size: 24px;
+   font-family: Arial, sans-serif;
+   cursor: pointer;
+ }
+ 
+ .emoji {
+   position: absolute;
+   left: 0;
+   animation: moveAndUnderline 1s ease-out forwards;
+   animation-delay: 0.5s; /* Delay before the animation starts */
+ }
+ 
+ .underline-animation::after {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 2px; /* Thickness of the underline */
+   background-color: #000; /* Color of the underline */
+   bottom: -2px; /* Position the underline just below the text */
+   left: 0;
+   animation: underline 1s ease-out forwards;
+   animation-delay: 0.5s; /* Delay before the animation starts */
+ }
+ 
+ @keyframes moveAndUnderline {
+   0% {
+     transform: translateX(-100%);
+   }
+   100% {
+     transform: translateX(580%) ;/* Adjust translateY to position the emoji below the text */
+     /* Adjust translateY to position the emoji below the text */
+   }
+ }
+ 
+ @keyframes underline {
+   0% {
+     width: 0;
+   }
+   100% {
+     width: 100%;
+   }
+ }
+
+ .styles{
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 5px 5px;
+   transition: 0.4s ease-out;
+ }
+
+ .styles:hover{
+   background-color: black;
+   color: red;
+
+ }
+ 
+ 
+/* Responsive Design for Screen Sizes Below 768px */
+/* @media (max-width: 554px) {
+   .emoji {
+      display: none;
+   }
+} */
+
+
+@media (max-width: 768px){
+   .control{
+      min-width: 55%;
+   }
+   select{
+      min-width: 95%;
+
+   }
+}
+@media (min-width:768px) and (max-width: 992px){
+   .control{
+      min-width: 20%;
+   }
+   select{
+      min-width: 35%;
+
+   }
+}
+@media(min-width: 993px) and (max-width: 1199px){
+   .control{
+        min-width:15%;
+   }
+   select{
+      min-width: 25%;
+   }
+}
