@@ -98,11 +98,11 @@ code {
  
  
 /* Responsive Design for Screen Sizes Below 768px */
-/* @media (max-width: 554px) {
+@media (max-width: 554px) {
    .emoji {
       display: none;
    }
-} */
+}
 
 
 @media (max-width: 768px){
