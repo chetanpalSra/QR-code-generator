@@ -1,3 +1,5 @@
+# QR-code-generator
+This is a QR code generator based on react app.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
