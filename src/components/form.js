@@ -47,7 +47,7 @@ function Form() {
 
   return (
     <div className="container d-flex mt-5" style={{ gap: "2rem" }}>
-      <div>
+      <div style={{marginTop: '-32px'}}>
         <form className="container" onSubmit={handleSubmit}>
           <h1 className="mt-3">
             📱 Create Your Custom QR Code: Enhance Your Brand's Connectivity 🌐
